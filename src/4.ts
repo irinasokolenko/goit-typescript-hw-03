@@ -12,7 +12,6 @@ class Key {
   
   class Person {
     constructor(private key: Key) {
-      this.key = key;
     }
   
     getKey(): Key {
@@ -27,6 +26,7 @@ class Key {
   
     constructor(key: Key) {
       this.key = key;
+      this.door = false;
     }
   
     abstract openDoor(key: Key): void;
